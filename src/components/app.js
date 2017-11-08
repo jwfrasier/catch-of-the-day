@@ -116,11 +116,16 @@ class App extends React.Component {
           addFish={this.addFish}
           removeFish={this.removeFish}
           loadSamples={this.loadSamples}
+          storeId={this.props.params.storeId}
           updateFish={this.updateFish}/>
       </div>
 
     )
   }
+}
+
+App.propTypes = {
+  params: React.PropTypes.object.isRequired
 }
 
 export default App
